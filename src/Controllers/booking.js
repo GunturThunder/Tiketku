@@ -14,6 +14,9 @@ module.exports = {
         checkIn,
         order_id,
         id_user,
+        gross_amount,
+        payment_code,
+        store,
       } = req.body;
       const data = {
         hotel,
@@ -25,6 +28,9 @@ module.exports = {
         checkIn,
         order_id,
         id_user,
+        gross_amount,
+        payment_code,
+        store,
       };
       await bookingModel.createBooking(data);
       helper.response(res, 200, "added successfully");
